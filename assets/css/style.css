@@ -1,6 +1,42 @@
-body, html {
-    font-size: 18px;
+html, body {
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(../img/black-bg.jpeg);
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+#intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 450%;
+    color: #f9f3f4;
+    margin-top: 0;
+}
+
+.content h2 {
+    font-size: 300%;
+    color: #f9f3f4;
+    margin-bottom: 0;
 }
