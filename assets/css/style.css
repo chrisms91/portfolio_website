@@ -1,9 +1,26 @@
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
 html, body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aef0d2;
+    margin: 1em 0;
+    padding: 0;
+    align-content: center;
 }
 
 #intro {
@@ -23,16 +40,21 @@ html, body {
     max-width: none;
 }
 
+#intro-sub {
+    font-family: 'Raleway', sans-serif;
+}
+
 .content {
     max-width: 700px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 
 .content h1 {
     font-size: 450%;
     color: #f9f3f4;
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 .content h2 {
@@ -40,3 +62,39 @@ html, body {
     color: #f9f3f4;
     margin-bottom: 0;
 }
+
+.content h3 {
+    font-size: 200%;
+    color: #f9f3f4;
+    margin-top: 40px;
+}
+
+/*
+ * Animation
+ */ 
+
+/*@keyframes expand-from-centre
+{
+  from {
+    stroke-dasharray: 0 300;
+    stroke-dashoffset: -150;
+  }
+  
+  to {
+    stroke-dasharray: 300 300;
+    stroke-dashoffset: 0;
+  }
+}
+
+.animline {
+  fill: none;
+  stroke: #aef0d2;
+  stroke-width: 2;
+  animation: expand-from-centre 2s linear forwards;
+}*/
+/*
+.line {
+    animation-name: line_animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}*/

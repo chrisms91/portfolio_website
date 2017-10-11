@@ -3,3 +3,12 @@
 // var windowH = $(window).height();
 
 // introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
+
+(function ($) {
+    // Init Wow
+    wow = new WOW( {
+        animateClass: 'animated',
+        offset:       100
+    });
+    wow.init();
+})(jQuery);
