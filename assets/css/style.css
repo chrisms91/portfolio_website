@@ -16,11 +16,19 @@ html, body {
 hr {
     display: block;
     height: 2px;
-    border: 0;
-    border-top: 1px solid #aef0d2;
     margin: 1em 0;
     padding: 0;
     align-content: center;
+}
+
+#intro-line {
+    border-top: 1px solid #aef0d2;
+    width: 0%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transition: width .5s;
+    transform: translateX(-50%);
 }
 
 #intro {
@@ -40,7 +48,12 @@ hr {
     max-width: none;
 }
 
+#intro-name {
+    opacity: 0;
+}
+
 #intro-sub {
+    opacity: 0;
     font-family: 'Raleway', sans-serif;
 }
 
