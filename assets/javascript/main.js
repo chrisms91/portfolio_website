@@ -1,4 +1,6 @@
 (function ($) {
+	var $hr = $('#intro-line');
+	var $scrollDown = $('#intro-a');
 
     // Init Wow
     wow = new WOW( {
@@ -16,7 +18,6 @@
     });
 
     // Grow hr tag
-    var $hr = $('#intro-line');
     setTimeout(function() {
     	$hr.css("width", "80%");
     }, 100);
@@ -43,5 +44,24 @@
     setTimeout(function() {
     	$('.scrollDown').addClass('animated flash infinite');
     }, 4500);
+
+    $('.scrollDown').bind('click', function(e) {
+    	$('.scrollDown').removeClass('.animated flash infinite');
+
+    });
+
+    //smooth scroll to the second section
+    $scrollDown.on('click', function(event){
+    	event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+
+    // Smooth Scrolling
+	function smoothScroll(target) {
+        $('body,html').animate(
+        	{'scrollTop':target.offset().top},
+        	1500, 'easeInOutExpo'
+        );
+	}
 
 })(jQuery);

@@ -44,6 +44,7 @@ hr {
     display: table;
     top: 0;
     background-size: cover;
+    position: relative;
 }
 
 #intro .inner {
@@ -86,7 +87,7 @@ hr {
     font-size: 450%;
     color: #f9f3f4;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 4%;
 }
 
 .content h2 {
@@ -98,18 +99,22 @@ hr {
 .content h3 {
     font-size: 200%;
     color: #f9f3f4;
-    margin-top: 30px;
+    margin-top: 4%;
 }
 
 .scrollDown {
-    margin-top: 40%;
     color: var(--cool-mint-color);
     font-size: 2.5em;
     cursor: default;
     -webkit-animation-duration: 4s;
     -moz-animation-duration: 4s;
     -ms-animation-duration: 4s;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    top: 90%;
 }
+
 
 /*--- Media Queries ---*/
 
@@ -120,5 +125,13 @@ hr {
     
 }
 @media screen and (max-width: 480px) {
-    
+    .content h1 {
+        font-size: 200%;
+    }
+    .content h3 {
+        font-size: 100%;
+    }
+    .scrollDown {
+        font-size: 1.5em;
+    }
 }
