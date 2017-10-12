@@ -32,4 +32,16 @@
     	$('#intro-sub').show().addClass('animated fadeInDown');
     }, 800);
 
+    // Fadeout content in intro page when scrolling down	   
+    $(window).scroll(function() {
+    	var $introH = $('#intro-content').height();
+    	var scroll = $(window).scrollTop();
+    	$('#intro-content').css({'opacity': (($introH-scroll)/$introH)});
+    });
+
+    //add animate on scrolldown arrow
+    setTimeout(function() {
+    	$('.scrollDown').addClass('animated flash infinite');
+    }, 4500);
+
 })(jQuery);

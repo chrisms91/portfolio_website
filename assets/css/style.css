@@ -3,7 +3,7 @@ font-family: 'Ubuntu', sans-serif;
 */
 :root {
     --cool-mint-color: #aef0d2;
-    --cool-white-color: #f9f3f4;
+    --cool-white-color: /*#f9f3f4;*/white;
 }
 
 html, body {
@@ -62,12 +62,18 @@ hr {
 #intro-name {
     opacity: 0;
     color: var(--cool-white-color);
+    -webkit-animation-duration: .6s;
+    -moz-animation-duration: .6s;
+    -ms-animation-duration: .6s;
 }
 
 #intro-sub {
     opacity: 0;
     font-family: 'Raleway', sans-serif;
     color: var(--cool-white-color);
+    -webkit-animation-duration: .6s;
+    -moz-animation-duration: .6s;
+    -ms-animation-duration: .6s;
 }
 
 .content {
@@ -80,7 +86,7 @@ hr {
     font-size: 450%;
     color: #f9f3f4;
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .content h2 {
@@ -92,7 +98,17 @@ hr {
 .content h3 {
     font-size: 200%;
     color: #f9f3f4;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+.scrollDown {
+    margin-top: 40%;
+    color: var(--cool-mint-color);
+    font-size: 2.5em;
+    cursor: default;
+    -webkit-animation-duration: 4s;
+    -moz-animation-duration: 4s;
+    -ms-animation-duration: 4s;
 }
 
 /*--- Media Queries ---*/
