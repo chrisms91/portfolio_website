@@ -1,6 +1,7 @@
 (function ($) {
 	var $hr = $('#intro-line');
-	var $scrollDown = $('#intro-a');
+	var $scrollDownAnchor = $('#intro-a');
+	var $downArrow = $('.scrollDown');
 
     // Init Wow
     wow = new WOW( {
@@ -42,16 +43,15 @@
 
     //add animate on scrolldown arrow
     setTimeout(function() {
-    	$('.scrollDown').addClass('animated flash infinite');
+    	$downArrow.addClass('animated flash infinite');
     }, 4500);
 
-    $('.scrollDown').bind('click', function(e) {
-    	$('.scrollDown').removeClass('.animated flash infinite');
-
+    $downArrow.bind('click', function(e) {
+    	$(this).removeClass('.animated flash infinite');
     });
 
     //smooth scroll to the second section
-    $scrollDown.on('click', function(event){
+    $scrollDownAnchor.on('click', function(event){
     	event.preventDefault();
         smoothScroll($(this.hash));
     });
@@ -60,7 +60,7 @@
 	function smoothScroll(target) {
         $('body,html').animate(
         	{'scrollTop':target.offset().top},
-        	1500, 'easeInOutExpo'
+        	1400, 'easeInOutExpo'
         );
 	}
 
