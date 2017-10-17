@@ -1,7 +1,14 @@
 (function ($) {
-	var $hr = $('#intro-line');
-	var $scrollDownAnchor = $('#intro-a');
-	var $downArrow = $('.scrollDown');
+	var $hr = $('#intro-line'),
+		$scrollDownAnchor = $('#intro-a'),
+		$downArrow = $('.scrollDown'),
+		contentSections = $('.cd-section'),
+		navigationItems = $('#cd-vertical-nav a');
+
+    updateNavigation();
+    $(window).on('scroll', function(){
+        updateNavigation();
+    });
 
     // Init Wow
     wow = new WOW( {
@@ -34,21 +41,27 @@
     	$('#intro-sub').show().addClass('animated fadeInDown');
     }, 800);
 
+    // Delay fadein animation for scrollDown cursor
+    setTimeout(function() {
+        $('.scrollDown').removeClass('hide-me').addClass('active-me')
+    }, 3000)
+
     // Fadeout content in intro page when scrolling down	   
     $(window).scroll(function() {
     	var $introH = $('#intro-content').height();
     	var scroll = $(window).scrollTop();
     	$('#intro-content').css({'opacity': (($introH-scroll)/$introH)});
+    	$('.scrollDown').css({'opacity': (($introH-scroll)/$introH)});
     });
 
-    //add animate on scrolldown arrow
-    setTimeout(function() {
-    	$downArrow.addClass('animated flash infinite');
-    }, 4500);
-
-    $downArrow.bind('click', function(e) {
-    	$(this).removeClass('.animated flash infinite');
-    });
+    // FadeIn navbar when scrolling down
+    $(window).scroll(function() {
+        if( $(this).scrollTop() >= $('#about-me').position().top / 4 ){
+            $('#cd-vertical-nav').removeClass('hide-me').addClass('active-me')
+        } else {
+            $('#cd-vertical-nav').removeClass('active-me').addClass('hide-me')
+        }
+    })
 
     //smooth scroll to the second section
     $scrollDownAnchor.on('click', function(event){
@@ -56,12 +69,41 @@
         smoothScroll($(this.hash));
     });
 
+	//smooth scroll to the section
+	navigationItems.on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+
+    //open-close navigation on touch devices
+    $('.touch .cd-nav-trigger').on('click', function(){
+    	$('.touch #cd-vertical-nav').toggleClass('open');
+  
+    });
+
+    //close navigation on touch devices when selectin an elemnt from the list
+    $('.touch #cd-vertical-nav a').on('click', function(){
+    	$('.touch #cd-vertical-nav').removeClass('open');
+    });
+
     // Smooth Scrolling
 	function smoothScroll(target) {
         $('body,html').animate(
         	{'scrollTop':target.offset().top},
-        	1400, 'easeInOutExpo'
+        	1200, 'easeInOutExpo'
         );
+	}
+
+	function updateNavigation() {
+		contentSections.each(function(){
+			$this = $(this);
+			var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
+			if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
+				navigationItems.eq(activeSection).addClass('is-selected');
+			}else {
+				navigationItems.eq(activeSection).removeClass('is-selected');
+			}
+		});
 	}
 
 })(jQuery);
