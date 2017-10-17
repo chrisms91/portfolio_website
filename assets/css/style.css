@@ -8,6 +8,7 @@ font-family: 'Ubuntu', sans-serif;
     --cool-grey-color: #aaa;
     --whitesmoke-color: #f4f3f3;
     --cool-dark-color: #2d313b;
+    --cool-blue-color: #007bff;
 }
 
 html, body {
@@ -18,12 +19,15 @@ html, body {
 /*    font-family: "prestige-elite-std", monospace; */    
 
     font-family: 'Open Sans', sans-serif; 
-
     margin: 0;
     padding: 0;
     height: 100% !important;
     width: 100%;
     background-color: white;
+}
+
+.blue {
+    color: var(--cool-blue-color);
 }
 
 .cd-section {
@@ -60,7 +64,7 @@ hr {
 }
 
 #intro-line {
-    border-top: 1px solid var(--cool-mint-color);
+    border-top: 1px solid var(--cool-blue-color);
     width: 0%;
     text-align: center;
     position: relative;
@@ -73,7 +77,7 @@ hr {
     height: 100% !important;
     width: 100%;
     margin: auto;
-    background-color: #222;
+    background-color: black;
     display: table;
     top: 0;
     background-size: cover;
@@ -155,7 +159,7 @@ hr {
 }
 
 .scrollDown {
-    color: var(--cool-white-color);
+    color: var(--cool-blue-color);
     font-size: 2.5em;
     cursor: default;
     transition: all 0.6s;
@@ -177,11 +181,13 @@ hr {
 
 #about-me {
     padding: 10% 0;
+    color: var(--cool-black-color);
 /*    font-family: "prestige-elite-std", monospace;
 */}
 
 #about-heading {
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 300%;
     text-transform: uppercase;
     margin-bottom: 5%;
@@ -194,12 +200,13 @@ hr {
     width: 100px;
     height: 2px;
     margin: 20px 0 20px;
-    background: #333;
+    background: var(--cool-blue-color);;
 }
 
 #about-lead {
-/*    font-weight: bold;
-*/    font-size: 150%;
+/*    font-weight: bold;*/    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
 }
 
 #about-photo: {
@@ -212,8 +219,43 @@ hr {
 }
 
 /*--- Skills ---*/
-#skills {
-    background-color: ;
+#skill {
+    padding-bottom: 10%;
+}
+
+#skill-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    font-weight: 400;
+    color: var(--cool-blue-color);
+}
+
+#skill-heading:after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 20px 0 20px;
+    background: var(--cool-black-color);;
+}
+
+.skill-sub-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--cool-black-color);
+}
+
+#skill-dev-section {
+}
+
+.skill-ul {
+    padding: 0;
+    display: inline-block;
+}
+
+.skill-category {
+    margin: 5px 0;
+    font-size: 1.3em;
 }
 
 
