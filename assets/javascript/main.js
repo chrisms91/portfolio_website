@@ -50,7 +50,11 @@
     $(window).scroll(function() {
     	var $introH = $('#intro-content').height();
     	var scroll = $(window).scrollTop();
-    	$('#intro-content').css({'opacity': (($introH-scroll)/$introH)});
+        var threshold = 4;
+        console.log($introH-scroll)
+        console.log($introH)
+        console.log(($introH-scroll)/$introH)
+    	$('#intro-content').css({'opacity': (($introH*threshold-scroll)/$introH)});
     	$('.scrollDown').css({'opacity': (($introH-scroll)/$introH)});
     });
 
