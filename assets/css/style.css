@@ -296,11 +296,50 @@ hr {
     background: var(--cool-black-color);
 }
 
+.project-sub-heading-col {
+    margin: 2% 0;
+}
+
 .project-sub-heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 2.6rem;
     color: var(--cool-black-color);
-    margin-bottom: 10%
+    text-decoration: none;
+    display: inline-block;
+}
+
+.project-sub-heading:after {
+    position: relative;
+    left: 0px;
+    content: "";
+    background: url(../img/right-arrow.png) no-repeat center;
+    background-size: 100%;
+    width: 22px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: 4%;
+    margin-left: 16px;
+    transition: all .15s ease-in-out;
+}
+
+.project-sub-heading:hover {
+    text-decoration: none;
+    color: var(--cool-blue-color);
+}
+
+.project-sub-heading:hover:after {
+    left: 10px;  
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-img-col {
+    margin: 3% 0;
 }
 
 .project-description {
@@ -310,7 +349,9 @@ hr {
 }
 
 .project-text {
-    margin-bottom: 10%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 3%;
 }
 
 .project-row {
