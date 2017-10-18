@@ -6,9 +6,6 @@
 		navigationItems = $('#cd-vertical-nav a');
 
     updateNavigation();
-    $(window).on('scroll', function(){
-        updateNavigation();
-    });
 
     // Init Wow
     wow = new WOW( {
@@ -45,27 +42,26 @@
     setTimeout(function() {
         $('.scrollDown').removeClass('hide-me').addClass('active-me')
     }, 3000)
-
-    // Fadeout content in intro page when scrolling down	   
+   
     $(window).scroll(function() {
+
+        updateNavigation();
     	var $introH = $('#intro-content').height();
     	var scroll = $(window).scrollTop();
-        var threshold = 4;
-        console.log($introH-scroll)
-        console.log($introH)
-        console.log(($introH-scroll)/$introH)
+        var threshold = 3.65;
+
+        // Fadeout content in intro page when scrolling down    
     	$('#intro-content').css({'opacity': (($introH*threshold-scroll)/$introH)});
     	$('.scrollDown').css({'opacity': (($introH-scroll)/$introH)});
-    });
 
-    // FadeIn navbar when scrolling down
-    $(window).scroll(function() {
+        // FadeIn navbar when scrolling down
         if( $(this).scrollTop() >= $('#about-me').position().top / 4 ){
             $('#cd-vertical-nav').removeClass('hide-me').addClass('active-me')
         } else {
             $('#cd-vertical-nav').removeClass('active-me').addClass('hide-me')
         }
-    })
+    });
+
 
     //smooth scroll to the second section
     $scrollDownAnchor.on('click', function(event){

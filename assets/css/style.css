@@ -180,7 +180,10 @@ hr {
 /*--- About Me ---*/
 
 #about-me {
-    padding: 10% 0;
+    padding-top: 14%;
+    padding-bottom: 14%;
+    padding-left: 0;
+    padding-right: 0;
     color: var(--cool-black-color);
 /*    font-family: "prestige-elite-std", monospace;
 */}
@@ -214,8 +217,10 @@ hr {
 }
 
 .about-text {
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 300;
     font-size: 1.15em;
-    line-height: 1.7em;
+    line-height: 1.6em;
 }
 
 /*--- Skills ---*/
@@ -255,8 +260,18 @@ hr {
 
 .skill-category {
     margin: 5px 0;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-weight: 300;
 }
+
+#skill-table>tbody>tr>td {
+    border-style: none;
+    padding: 5px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+
 
 
 /*--- Vertical Navigation ---*/
