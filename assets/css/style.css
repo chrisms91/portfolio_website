@@ -303,10 +303,30 @@ hr {
     margin-bottom: 10%
 }
 
-.project-text {
+.project-description {
     padding-top: 5%;
     font-size: 1.5em;
     font-weight: 300;
+}
+
+.project-text {
+    margin-bottom: 10%;
+}
+
+.project-row {
+    margin-bottom: 10%;
+}
+
+.project-used-item {
+    display: inline-block;
+    margin: 3px 3px 3px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: var(--cool-blue-color);
+    border: 1px solid var(--cool-blue-color);
+    background: 0 0;
 }
 
 
