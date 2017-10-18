@@ -183,7 +183,7 @@ hr {
 /*--- About Me ---*/
 
 #about-me {
-    padding-top: 14%;
+    padding-top: 10%;
     padding-bottom: 14%;
     padding-left: 0;
     padding-right: 0;
@@ -215,10 +215,6 @@ hr {
     font-size: 150%;
 }
 
-#about-photo {
-    padding: 20% 0;
-}
-
 .about-text {
     font-family: 'Open-Sans', sans-serif;
     font-weight: 300;
@@ -226,9 +222,11 @@ hr {
     line-height: 1.6em;
 }
 
-/*--- Skills ---*/
+/*----------------------*/
+/*        Skills        */
+/*----------------------*/
 #skill {
-    padding-bottom: 10%;
+    padding-bottom: 14%;
 }
 
 #skill-heading {
@@ -244,7 +242,7 @@ hr {
     width: 50px;
     height: 2px;
     margin: 20px 0 20px;
-    background: var(--cool-black-color);;
+    background: var(--cool-black-color);
 }
 
 .skill-sub-heading {
@@ -274,11 +272,48 @@ hr {
     font-weight: 300;
 }
 
+/*---------------------------*/
+/*         Projects          */
+/*---------------------------*/
+
+#project {
+    padding-top: 10%;
+}
+
+#project-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    font-weight: 400;
+    color: var(--cool-blue-color);
+}
+
+#project-heading:after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 20px 0 20px;
+    background: var(--cool-black-color);
+}
+
+.project-sub-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--cool-black-color);
+    margin-bottom: 10%
+}
+
+.project-text {
+    padding-top: 5%;
+    font-size: 1.5em;
+    font-weight: 300;
+}
 
 
 
-/*--- Vertical Navigation ---*/
-
+/*-------------------------------*/
+/*      Vertical Navigation      */
+/*-------------------------------*/
 .cd-img-replace {
   /* replace text with a background-image */
     display: inline-block;
