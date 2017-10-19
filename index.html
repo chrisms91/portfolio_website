@@ -84,15 +84,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-8">
-						<h2 id="about-heading" class="wow slideInUp"> Hello! I'm <span class="blue">Chris</span> :)</h2>
-                        <p id="about-lead" class="wow slideInUp">I'm design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design</p>
-                        <p class="about-text wow fadeInUp"> 
-                        	<strong>I'm currently a senior at the University of California, Irvine</strong>, pursuing a bachelor’s degree in Computer Science. As a web developer studying computer science, I strive to create application that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences.
-                        </p>
-                        <br>
-                        <p class="about-text wow fadeInUp">
-                        	<strong>I'm curious, and I enjoy work that challenges me to learn something new and stretch in a different direction.</strong> I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I think there is no limit on learning, and I'm always looking for opportunities to learn from others who are willing to share their knowledge as much as I want to learn. Slow and steady wins the race :)
-                        </p>
+						<h2 id="about-heading" class="wow fadeInUp"> Hello! I'm <span class="blue">Chris</span> :)</h2>
+						<p id="about-lead" class="wow fadeInUp">I'm design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design</p>
+						<div class="wow fadeInUp" data-wow-delay="1s">
+							<p class="about-text"> 
+								<strong>I'm currently a senior at the University of California, Irvine</strong>, pursuing a bachelor’s degree in Computer Science. As a web developer studying computer science, I strive to create application that not only functions efficiently under the hood, but also provides intuitive, pixel-perfect user experiences.
+							</p>
+							<br>
+							<p class="about-text">
+								<strong>I'm curious, and I enjoy work that challenges me to learn something new and stretch in a different direction.</strong> I love learning new and better ways to create seamless user experiences with clean, efficient, and scalable code. I think there is no limit on learning, and I'm always looking for opportunities to learn from others who are willing to share their knowledge as much as I want to learn. Slow and steady wins the race :)
+							</p>
+						</div>
 					</div>
 					<!-- <div class="col-sm-4 col-sm-offset-1 wow fadeInUp">
 						<p>
@@ -104,14 +106,15 @@
 		</section>
 		<!-- /AboutMe -->
 
+		<!-- Skills -->
 		<section id="skill" class="cd-section">
 			<div class="container">
                 <div class="row">
-                	<div class="col-sm-12 wow slideInUp">
+                	<div class="col-sm-12 wow slideInUp" data-wow-duration=".7s">
                 		<h2 id="skill-heading"> SKILLS </h2>
                 	</div>
                 </div>
-                <div class="row wow fadeInLeft">
+                <div class="row wow fadeInUp" data-wow-delay="1s">
                 	<div class="col-xs-12 col-sm-3" id="skill-dev-section">
                 	    <h3 class="skill-sub-heading"> LANGUAGES </h3>
                 	    <ul class="skill-ul">
@@ -155,47 +158,84 @@
                 </div>
 			</div>
 		</section>
-
+		<!-- /Skills -->
 
 		<section id="portfolio" class="cd-section">
-			<div class="container">
+			<div class="container portfolio-container">
 				<div class="row project-heading">
-					<div class="col-sm-12 wow slideInUp">
+					<div class="col-sm-12 wow fadeInUp" data-wow-delay=".6s">
 						<h2 id="project-heading"> PROJECTS </h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12 project-img-col">
+					<div class="col-sm-12 project-img-col wow fadeInLeft" data-wow-duration=".8s">
 						<a href="https://ocnative.github.io/Purple/" target="_blank"><img src="assets/img/squpon-responsive-img.png" alt="Responsive image" class="project-img"></a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-3 project-sub-heading-col">
-						<a href="https://github.com/chrisms91/Squpon" class="project-sub-heading" target="_black">SQUPON</a>
+				<div class="wow fadeInUp" data-wow-delay="1s">
+					<div class="row">
+						<div class="col-sm-3 project-sub-heading-col">
+							<a href="https://github.com/chrisms91/Squpon" class="project-sub-heading" target="_black">SQUPON</a>
+						</div>
 					</div>
-					<div class="col-sm-2">
+					<div class="row">
+						<div class="col-sm-10">
+							<p class="project-text">
+								Squpon is a web application which allows users to discover and save on deals and coupons 
+								while utilizing multiple APIs. Location and keyword searching is also available. 
+								It was developed primarily using Foundation for front-end framework and Javascript and 
+								jQuery for handling data.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="project-used-item">JAVASCRIPT</span>
+							<span class="project-used-item">NODE.JS</span>
+							<span class="project-used-item">EXPRESS</span>
+							<span class="project-used-item">PASSPORT.JS</span>								
+							<span class="project-used-item">HANDLEBAR</span>
+							<span class="project-used-item">MYSQL</span>
+							<span class="project-used-item">SEQUELIZE</span>
+						</div>
 					</div>
 				</div>
+			</div>
+
+				
+			<div class="container portfolio-container">
 				<div class="row">
-					<div class="col-sm-10">
-						<p class="project-text">
-							Squpon is a web application which allows users to discover and save on deals and coupons 
-							while utilizing multiple APIs. Location and keyword searching is also available. 
-							It was developed primarily using Foundation for front-end framework and Javascript and 
-							jQuery for handling data.
-						</p>
+					<div class="col-sm-12 project-img-col wow fadeInLeft" data-wow-duration=".8s">
+						<a href="https://limitless-eyrie-45922.herokuapp.com/" target="_blank"><img src="assets/img/fundr-responsive-img.png" alt="Responsive image" class="project-img"></a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12">
-						<span class="project-used-item">JAVASCRIPT</span>
-						<span class="project-used-item">NODE.JS</span>
-						<span class="project-used-item">EXPRESS</span>
-						<span class="project-used-item">PASSPORT.JS</span>								
-						<span class="project-used-item">HANDLEBAR.JS</span>
-						<span class="project-used-item">SEQUELIZE</span>
+				<div class="wow fadeInUp project-description" data-wow-delay="1s">
+					<div class="row">
+						<div class="col-sm-3 project-sub-heading-col">
+							<a href="https://github.com/chrisms91/TripFundR" class="project-sub-heading" target="_black">TRIPFUNDR</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10">
+							<p class="project-text">
+								TripFundR is a web app that helps people to 
+								organize and plan trips by setting goals for funds and items needed for trips.
+								The web app allows people to create new trip and invite friends via email.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<span class="project-used-item">FOUNDATION</span>
+							<span class="project-used-item">JAVASCRIPT</span>
+							<span class="project-used-item">JQUERY</span>
+							<span class="project-used-item">FIREBASE</span>
+							<span class="project-used-item">GOOGLE API</span>								
+							<span class="project-used-item">SQOOT API</span>
+						</div>
 					</div>
 				</div>
+			</div>
 				<!--
 				<div class="row project-row">
 					<div class="col-sm-3 project-description">
@@ -244,7 +284,6 @@
 						<img src="assets/img/squpon-img.png" class="img-responsive" alt="Responsive image" id="project-img">
 					</div>
 				</div> -->
-			</div>
 	
 		</section>
 		<section id="contact" class="cd-section">

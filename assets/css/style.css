@@ -227,6 +227,7 @@ hr {
 /*----------------------*/
 #skill {
     padding-bottom: 14%;
+    padding-top: 3%;
 }
 
 #skill-heading {
@@ -343,9 +344,7 @@ hr {
 }
 
 .project-description {
-    padding-top: 5%;
-    font-size: 1.5em;
-    font-weight: 300;
+    margin-bottom: 5%;
 }
 
 .project-text {
@@ -368,6 +367,10 @@ hr {
     color: var(--cool-blue-color);
     border: 1px solid var(--cool-blue-color);
     background: 0 0;
+}
+
+.portfolio-container {
+    margin-bottom: 10%;
 }
 
 
