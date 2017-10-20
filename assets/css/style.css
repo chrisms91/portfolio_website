@@ -475,7 +475,7 @@ hr {
 }
 
 /* Touch devices */
-.touch .cd-nav-trigger {
+/* .touch .cd-nav-trigger {
     display: block;
     z-index: 2;
     position: fixed;
@@ -484,7 +484,7 @@ hr {
     height: 44px;
     width: 44px;
     border-radius: 0.25em;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 73, 255, 0.90);
 }
 .touch .cd-nav-trigger span {
     position: absolute;
@@ -602,7 +602,7 @@ hr {
     .touch .cd-nav-trigger, .touch #cd-vertical-nav {
         bottom: 40px;
     }
-}
+} */
 
 
 
@@ -624,6 +624,14 @@ hr {
         font-size: 100%;
     }
     .scrollDown {
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+
+    #about-heading {
+        font-size: 3rem;
+    }
+
+    #about-lead {
+        font-size: 2rem;
     }
 }
