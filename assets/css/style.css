@@ -26,6 +26,10 @@ html, body {
     background-color: white;
 }
 
+a, a:hover, a:visited, a:link, a:active {
+    text-decoration: none !important;
+} 
+
 .blue {
     color: var(--cool-blue-color);
 }
@@ -235,6 +239,7 @@ hr {
     font-size: 300%;
     font-weight: 400;
     color: var(--cool-blue-color);
+    margin-bottom: 30px;
 }
 
 #skill-heading:after {
@@ -251,9 +256,6 @@ hr {
     font-weight: 500;
     color: var(--cool-black-color);
 }
-/* 
-#skill-dev-section {
-} */
 
 .skill-ul {
     padding: 0;
@@ -373,20 +375,24 @@ hr {
     margin-bottom: 10%;
 }
 
+.portfolio-container:nth-child(2) {
+    margin-bottom: 8%;
+}
+
 
 
 /*-------------------------------*/
 /*      Vertical Navigation      */
 /*-------------------------------*/
-/* .cd-img-replace {
+.cd-img-replace {
     display: inline-block;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-} */
+}
 
 /* No Touch devices */
-/* .cd-nav-trigger {
+.cd-nav-trigger {
     display: none;
 }
 
@@ -435,12 +441,12 @@ hr {
     opacity: 1;
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-    background-color: black;
+    background-color: var(--cool-blue-color);
 }
 .no-touch #cd-vertical-nav .cd-dot {
-    position: relative; */
+    position: relative;
     /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-    /* top: 8px;
+    top: 8px;
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -473,7 +479,7 @@ hr {
 } */
 
 /* Touch devices */
-/* .touch .cd-nav-trigger {
+.touch .cd-nav-trigger {
     display: block;
     z-index: 2;
     position: fixed;
@@ -600,7 +606,7 @@ hr {
     .touch .cd-nav-trigger, .touch #cd-vertical-nav {
         bottom: 40px;
     }
-} */
+}
 
 
 
@@ -615,21 +621,47 @@ hr {
     
 }
 @media screen and (max-width: 480px) {
+    .wow {
+        visibility: visible !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
     .content h1 {
-        font-size: 200%;
+        font-size: 220%;
     }
     .content h3 {
-        font-size: 100%;
+        font-size: 110%;
     }
+
     .scrollDown {
+        font-size: 1.2em;
+    }
+    /* turn off hover effect on arrow */
+    .scrollDown:hover {
         font-size: 1.2em;
     }
 
     #about-heading {
-        font-size: 3rem;
+        font-size: 4rem;
+        line-height: 5rem;
     }
 
     #about-lead {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
     }
+
+    #about-lead:after {
+        margin: 40px 0 40px;
+    }
+
+    .about-text {
+        font-size: 1.65rem;
+        line-height: 3rem;
+    }
+
+
 }

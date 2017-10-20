@@ -1,3 +1,4 @@
+
 (function ($) {
 	var $hr = $('#intro-line'),
 		$scrollDownAnchor = $('#intro-a'),
@@ -11,18 +12,18 @@
     wow = new WOW( {
         animateClass: 'animated',
         offset:       100,
-        mobile: false,
-        live: true
     });
     wow.init();
 
-    //Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            // console.log(data.curTop);
-        }
-    });
+    
+
+    // //Init Skrollr
+    // var s = skrollr.init({
+    //     render: function(data) {
+    //         //Debugging - Log the current scroll position.
+    //         // console.log(data.curTop);
+    //     }
+    // });
 
     // Grow hr tag
     setTimeout(function() {
@@ -79,12 +80,14 @@
 
     //open-close navigation on touch devices
     $('.touch .cd-nav-trigger').on('click', function(){
+        event.preventDefault();
     	$('.touch #cd-vertical-nav').toggleClass('open');
   
     });
 
     //close navigation on touch devices when selectin an elemnt from the list
     $('.touch #cd-vertical-nav a').on('click', function(){
+        event.preventDefault();
     	$('.touch #cd-vertical-nav').removeClass('open');
     });
 
