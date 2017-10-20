@@ -378,16 +378,15 @@ hr {
 /*-------------------------------*/
 /*      Vertical Navigation      */
 /*-------------------------------*/
-.cd-img-replace {
-  /* replace text with a background-image */
+/* .cd-img-replace {
     display: inline-block;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-}
+} */
 
 /* No Touch devices */
-.cd-nav-trigger {
+/* .cd-nav-trigger {
     display: none;
 }
 
@@ -408,7 +407,6 @@ hr {
 }
 .no-touch #cd-vertical-nav a {
     display: inline-block;
-    /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -440,9 +438,9 @@ hr {
     background-color: black;
 }
 .no-touch #cd-vertical-nav .cd-dot {
-    position: relative;
+    position: relative; */
     /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-    top: 8px;
+    /* top: 8px;
     height: 12px;
     width: 12px;
     border-radius: 50%;
@@ -472,10 +470,10 @@ hr {
     -ms-transform-origin: 100% 50%;
     -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
-}
+} */
 
 /* Touch devices */
-.touch .cd-nav-trigger {
+/* .touch .cd-nav-trigger {
     display: block;
     z-index: 2;
     position: fixed;
@@ -602,7 +600,7 @@ hr {
     .touch .cd-nav-trigger, .touch #cd-vertical-nav {
         bottom: 40px;
     }
-}
+} */
 
 
 
