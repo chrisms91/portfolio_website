@@ -257,6 +257,58 @@ hr {
     color: var(--cool-black-color);
 }
 
+#skill-lng-icon {
+    background: url(../img/gear-icon.png) center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#skill-tool-icon {
+    background: url(../img/tool-icon.png) center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#skill-concept-icon {
+    background: url(../img/bulb-icon.png) center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* .skill-sub-heading:nth-child(0):before {
+    content: "";
+    background: url(../img/gear-icon.png) center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+} */
+/* .skill-sub-heading:nth-child(1):before {
+    content: "";
+    background: url(../img/tool-icon.png) center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.skill-sub-heading:nth-child(2):before {
+    content: "";
+    background: url(../img/bulb-icon.png) center;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+} */
+
 .skill-ul {
     padding: 0;
     display: inline-block;
@@ -274,6 +326,7 @@ hr {
     font-size: 1.5em;
     font-weight: 300;
 }
+
 
 /*---------------------------*/
 /*         Projects          */
