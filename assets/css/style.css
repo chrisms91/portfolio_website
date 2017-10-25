@@ -456,6 +456,91 @@ hr {
     margin-bottom: 8%;
 }
 
+/*------------------------------*/
+/*          Contacts            */
+/*------------------------------*/
+#footer {
+    background-color: black;
+    height: 200px;
+}
+
+#footer-wrapper {
+    height: 100%;
+    padding: 45px 0 40px;
+}
+
+#footer-ul {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-item {
+    display: inline-block;
+    margin: 1rem .5rem;
+    text-decoration: none;
+}
+
+
+.footer-item a:after:hover {
+    opacity: 1;
+}
+
+#footer-ul > li > a{
+    position: relative;
+    color: var(--cool-white-color);
+}
+
+#copyright-wrapper {
+    margin-top: 1.7rem;
+}
+
+#copyright-content {
+    color: white;
+}
+
+.footer-link {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.footer-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.footer-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #007bff;
+    transition: width .5s ease;
+}
+
+.footer-link:hover:before {
+    width: 100%;
+    background: #007bff;
+    transition: width .5s ease;
+}
+
+.footer-link:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+
 
 
 /*-------------------------------*/
