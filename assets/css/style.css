@@ -540,7 +540,9 @@ hr {
     transition: all 0s ease;
 }
 
-
+#view-resume {
+    margin: 90px 0;
+}
 
 
 /*-------------------------------*/
