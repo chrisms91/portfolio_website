@@ -812,7 +812,7 @@ hr {
     }
 
     #about-lead {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 4rem;
     }
 
@@ -821,9 +821,34 @@ hr {
     }
 
     .about-text {
-        font-size: 1.65rem;
+        font-size: 1.37rem;
         line-height: 3rem;
     }
 
+    .skill-sub-heading {
+        font-size: 2.2rem;
+    }
 
+    #skill-lng-icon, #skill-tool-icon, #skill-concept-icon{
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    .skill-category {
+        font-size: 1.7rem;
+    }
+
+    .skill-check-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #skill-table > tbody {
+        font-size: 1.15rem;
+    }
+
+    .project-text {
+        font-size: 1.37rem;
+        line-height: 2.5rem;
+    }
 }
