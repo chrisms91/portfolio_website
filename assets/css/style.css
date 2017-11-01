@@ -584,7 +584,7 @@ hr {
     margin: 90px 0;
 }
 
-#resume-text {
+/* #resume-text {
     display: inline-block;
     position: relative;
     mix-blend-mode: lighten;
@@ -631,6 +631,43 @@ hr {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
+} */
+
+#resume-link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding-bottom: 3px;
+    padding-top: 4px;
+    
+    
+    transition: color ease 0.3s;
+    font-size: 3rem;
+}
+
+#resume-link:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 5%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--cool-blue-color);
+    transition: all ease 0.3s;
+}
+
+#resume-link:hover {
+    color: var(--cool-white-color);
+}
+
+#resume-link:hover:after {
+    height: 100%;
+}
+
+#resume-emoji {
+    font-size: 3rem;
 }
 
 
@@ -957,6 +994,10 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
+    .col-xs-12 {
+        width: 70%;
+    }
+
     .content h1 {
         font-size: 420%;
     }
@@ -987,6 +1028,8 @@ hr {
         font-size: 1.4rem;
     }
 
+    
+
     .skill-td {
         width: 20%;
     }
@@ -997,6 +1040,10 @@ hr {
 }
 
 @media screen and (max-width: 630px) {
+
+    .col-xs-12 {
+        width: 90%;
+    }
 
     #footer {
         display: block;
@@ -1025,6 +1072,8 @@ hr {
         margin: 0 10px;
     }
 }
+
+
 
 @media screen and (max-width: 480px) {
     .wow {
