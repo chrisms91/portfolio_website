@@ -865,6 +865,23 @@ hr {
 
 
 /*--- Media Queries ---*/
+
+@media screen and (max-width: 1200px) {
+    .skill-sub-heading {
+        font-size: 2.1rem;
+    }
+
+    #skill-lng-icon, #skill-tool-icon, #skill-concept-icon{
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+
+    #resume-text {
+        font-size: 2.8rem;
+    }
+
+
+}
 @media screen and (max-width: 1024px) {
     #about-heading {
         font-size: 4rem;
@@ -889,7 +906,7 @@ hr {
     }
 
     .skill-category {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .skill-check-icon {
@@ -898,11 +915,38 @@ hr {
     }
 
     #skill-table > tbody {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
+    }
+
+    #resume-text {
+        font-size: 2.8rem;
     }
 }
 
+@media screen and (max-width: 992px) {
+    /* .container {
+        width: 850px;
+    } */
+    .skill-sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .skill-category {
+        font-size: 1.6rem;
+    }
+
+    #skill-table > tbody {
+        font-size: 1rem;
+    }
+
+    #resume-text {
+        font-size: 2.5rem;
+    }
+
+}
+
 @media screen and (max-width: 800px) {
+    
     #footer-right span {
         display: none;
     }
@@ -912,8 +956,7 @@ hr {
     }
 }
 
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 767px) {
     .content h1 {
         font-size: 420%;
     }
@@ -923,16 +966,16 @@ hr {
 
 
     .skill-sub-heading {
-        font-size: 1.57rem;
+        font-size: 2.5rem;
     }
 
     #skill-lng-icon, #skill-tool-icon, #skill-concept-icon{
-        height: 2.1rem;
-        width: 2.1rem;
+        height: 2.9rem;
+        width: 2.9rem;
     }
 
     .skill-category {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .skill-check-icon {
@@ -941,7 +984,11 @@ hr {
     }
 
     #skill-table > tbody {
-        font-size: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .skill-td {
+        width: 20%;
     }
 
     #resume-text {
