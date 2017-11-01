@@ -460,44 +460,84 @@ hr {
 /*          Contacts            */
 /*------------------------------*/
 #footer {
-    background-color: black;
-    height: 200px;
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
-#footer-wrapper {
-    height: 100%;
-    padding: 45px 0 40px;
+#footer-left {
+    width: 200px;
 }
 
-#footer-ul {
+#top {
     display: block;
-    list-style: none;
-    padding-left: 0;
+    margin-bottom: 3px;
 }
 
-.footer-item {
-    display: inline-block;
-    margin: 1rem .5rem;
-    text-decoration: none;
+#bottom {
+    display: block;
 }
 
 
-.footer-item a:after:hover {
-    opacity: 1;
-}
 
-#footer-ul > li > a{
+#footer-right a {
     position: relative;
-    color: var(--cool-white-color);
+    display: inline-block;
+    margin: 0 15px;
+    color: var(--cool-blue-color);
+    text-decoration: none;
+    padding-bottom: 5px;
 }
 
-#copyright-wrapper {
-    margin-top: 1.7rem;
+#footer-right a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
 }
 
-#copyright-content {
-    color: white;
+#footer-right a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #007bff;
+    transition: width .5s ease;
 }
+
+
+#footer-right a:hover:before {
+    width: 100%;
+    background: #007bff;
+    transition: width .5s ease;
+}
+
+#footer-right a:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+#footer-right img {
+    display: none;
+    width: 30px;
+}
+
+.footer-link {
+    text-transform: uppercase;
+}
+
+/*
 
 .footer-link {
     display: inline-block;
@@ -538,25 +578,74 @@ hr {
     width: 100%;
     background: transparent;
     transition: all 0s ease;
+} */
+
+#resume-section {
+    margin: 90px 0;
 }
 
-#view-resume {
-    margin: 90px 0;
+#resume-text {
+    display: inline-block;
+    position: relative;
+    mix-blend-mode: lighten;
+    font-size: 1.45em;
+    padding-bottom: 10px;
+    transition: color .4s ease;
+}
+
+#resume-text:hover {
+    color: var(--cool-blue-color);
+}
+
+#resume-text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+    margin-top: 10px;
+}
+
+#resume-text:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #007bff;
+    transition: width .5s ease;
+}
+
+#resume-text:hover:before {
+    width: 100%;
+    background: #007bff;
+    transition: width .5s ease;
+}
+
+#resume-text:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
 }
 
 
 /*-------------------------------*/
 /*      Vertical Navigation      */
 /*-------------------------------*/
-.cd-img-replace {
+/* .cd-img-replace {
     display: inline-block;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
-}
+} */
 
 /* No Touch devices */
-.cd-nav-trigger {
+/* .cd-nav-trigger {
     display: none;
 }
 
@@ -609,7 +698,6 @@ hr {
 }
 .no-touch #cd-vertical-nav .cd-dot {
     position: relative;
-    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
     top: 8px;
     height: 12px;
     width: 12px;
@@ -640,10 +728,10 @@ hr {
     -ms-transform-origin: 100% 50%;
     -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
-} */
+}  */
 
 /* Touch devices */
-.touch .cd-nav-trigger {
+/* .touch .cd-nav-trigger {
     display: block;
     z-index: 2;
     position: fixed;
@@ -770,20 +858,127 @@ hr {
     .touch .cd-nav-trigger, .touch #cd-vertical-nav {
         bottom: 40px;
     }
-}
+} */
 
 
 
 
 
 /*--- Media Queries ---*/
+@media screen and (max-width: 1024px) {
+    #about-heading {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
 
-@media screen and (max-width: 900px) {
+    #about-lead {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    #footer {
+        padding: 50px;
+    }
 
+    .skill-sub-heading {
+        font-size: 2.1rem;
+    }
+
+    #skill-lng-icon, #skill-tool-icon, #skill-concept-icon{
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    .skill-category {
+        font-size: 1.7rem;
+    }
+
+    .skill-check-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #skill-table > tbody {
+        font-size: 1.15rem;
+    }
 }
+
+@media screen and (max-width: 800px) {
+    #footer-right span {
+        display: none;
+    }
+
+    #footer-right img {
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    
+  
+    .content h1 {
+        font-size: 420%;
+    }
+    .content h3 {
+        font-size: 200%;
+    }
+
+
+    .skill-sub-heading {
+        font-size: 1.57rem;
+    }
+
+    #skill-lng-icon, #skill-tool-icon, #skill-concept-icon{
+        height: 2.1rem;
+        width: 2.1rem;
+    }
+
+    .skill-category {
+        font-size: 1.5rem;
+    }
+
+    .skill-check-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #skill-table > tbody {
+        font-size: 1rem;
+    }
+
+    #resume-text {
+        font-size: 2.5rem;
+    }
 }
+
+@media screen and (max-width: 630px) {
+
+    #footer {
+        display: block;
+    }
+
+    #footer-left {
+        text-align: center;
+        width: auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-left #top {
+        display: inline-block;
+    }
+
+    #footer-left #bottom {
+        display: inline-block;
+    }
+
+    #footer-right {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-right a {
+        margin: 0 10px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .wow {
         visibility: visible !important;
@@ -852,5 +1047,10 @@ hr {
     .project-text {
         font-size: 1.37rem;
         line-height: 2.5rem;
+    }
+
+    #footer {
+        padding: 50px 30px;
+        display: block;
     }
 }
