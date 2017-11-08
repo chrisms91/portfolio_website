@@ -8,6 +8,11 @@
 
     updateNavigation();
 
+    // force page scroll to the top at page refresh
+    $(window).on('beforeunload', function(){
+        $(window).scrollTop(0);
+    });
+
     // Init Wow
     wow = new WOW( {
         animateClass: 'animated',
