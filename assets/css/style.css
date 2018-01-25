@@ -55,6 +55,7 @@ a, a:hover, a:visited, a:link, a:active {
 ul {
     list-style: none;
 }
+
 /*
  * A better looking default horizontal rule
  */
@@ -137,6 +138,18 @@ hr {
     -webkit-animation-duration: .6s;
     -moz-animation-duration: .6s;
     -ms-animation-duration: .6s;
+}
+
+
+#intro-a img{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 8%;
+    margin: 0 auto;
+    left: 47%;
+    right: auto;
+    
 }
 
 .content {
