@@ -96,6 +96,9 @@
     	$('.touch #cd-vertical-nav').removeClass('open');
     });
 
+    const currentYear = new Date().getFullYear();
+    $('#year-end').append(currentYear);
+
     // Smooth Scrolling
 	function smoothScroll(target) {
         $('body,html').animate(
